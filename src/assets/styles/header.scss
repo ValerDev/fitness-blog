@@ -1,0 +1,36 @@
+@import "./includes/variables.scss";
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.logo-block{
+    width: 200px;
+    padding: 0 15px;
+    img{
+        width: 100%;
+        object-fit: contain;
+        margin: 15px 0;
+        transition: .3s;
+    }img:hover{
+        width: 110%;
+        padding:0 20px;
+    }
+}
+.primary-menu{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    a{
+        font-size: 18px;
+        color: $primaryColor;
+        transition: .3s;
+    }a:hover{
+        font-size: 20px;
+        color: $darkColor;
+    }
+}
