@@ -13,8 +13,8 @@ const Header = (props) => {
                 </div>
                 <div className="primary-menu">
                     {
-                        props.data.header_menu.map(
-                            (menu, i) => <Link key={i} to={menu.link}>{menu.title}</Link>
+                        props.state.header_menu.map(
+                            (menu, index) => <Link key={index} to={menu.link}>{menu.title}</Link>
                         )
                     }
                 </div>

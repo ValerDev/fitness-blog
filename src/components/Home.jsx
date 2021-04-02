@@ -1,15 +1,19 @@
 import React from 'react';
-import ReactDOM from "react-dom";
-import {
-  BrowserRouter as Router,
-  Route,
-} from "react-router-dom";
+import CustomSlider from './slider/Slider';
 
 const Home = (props) => {
   return (
-    <div>
+    <section id='home'>
+      <CustomSlider state={{
+        images: props.state.slider_images,
+        title: "Slider",
+        height: "500px",
+        size: 'cover'
+      }} />
       <h1>Fitness Blog</h1>
       <h5>Day 1</h5>
-    </div>)
+    </section>
+  )
+
 }
 export default Home;

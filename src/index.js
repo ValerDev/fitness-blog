@@ -5,14 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './redux/store';
 
-const reRender = (state) =>{
+const reRender = (state) => {
   ReactDOM.render(
     <React.StrictMode>
-      <App  state={store._store}/>
+      <App state={store.getState()} />
     </React.StrictMode>,
     document.getElementById('root')
   );
 }
 store.subscribe(reRender);
-reRender(store._state);
+reRender(store.getState());
 reportWebVitals();

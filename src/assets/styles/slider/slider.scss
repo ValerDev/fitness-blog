@@ -1,0 +1,22 @@
+.custom-slider{
+    .carousel-initialized{
+        .carousel-track{
+            .carousel-item{
+                .carousel-row{
+                    >div{
+                        outline: none;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    >.danger{
+                        font-weight: bold;
+                        font-size: 25px;
+                        color: crimson;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,17 +6,16 @@ import {
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import store from './redux/store';
 
 function App(props) {
   return (
     <div className="app">
       <Router>
-      <Header data = {props.state.header}/>
+        <Header state={props.state.header} />
         <Route exact path="/">
-          <Home data = {store.getState()}/>
+          <Home state={props.state.pages.home} />
         </Route>
-      <Footer data = {props.state.footer}/>
+        <Footer state={props.state.footer} />
       </Router>
     </div>
   )

@@ -24,7 +24,7 @@ const store = {
         },
         pages:{
             home:{
-
+                slider_images : ['/images/homeSliderImages/home_slider_1.jpg','/images/homeSliderImages/home_slider_2.jpg','/images/homeSliderImages/home_slider_3.jpg','/images/homeSliderImages/home_slider_4.jpg']
             },
             blog:{
 
