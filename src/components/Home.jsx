@@ -1,6 +1,7 @@
 import React from 'react';
 import CustomSlider from './slider/Slider';
-import home from '../assets/styles/home.scss'
+import '../assets/styles/home.scss';
+import { Link } from 'react-router-dom';
 
 const Home = (props) => {
   return (
@@ -14,12 +15,16 @@ const Home = (props) => {
       }} />
       <div className = "about-team-block">
         <div className = "about-img-block">
-          <img src={props.state.about_img} />
+          <img src={props.state.about_img} alt = "About us"/>
         </div>
         <div className = "about-text-block">
           <h2>{props.state.about_title}</h2>
           <span>{props.state.about_text}</span>
-          <button>Learn more</button>
+            <Link to = "/about-us">
+              <button>
+                Learn more
+              </button>
+            </Link>
         </div>
       </div>
     </section>

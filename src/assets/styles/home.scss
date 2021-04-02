@@ -42,10 +42,10 @@
             border: none;
             border-radius: 10px;
             transition: .3s;
-        }
-        button:hover{
-            cursor: pointer;
-            background-color: $lightSecondary;
+            &:hover{
+                cursor: pointer;
+                background-color: $lightSecondary;
+            }
         }
     }
 }
