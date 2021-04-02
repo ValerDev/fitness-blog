@@ -13,19 +13,20 @@ const Home = (props) => {
         size: 'cover',
         speed: 3500,
       }} />
-      <div className = "about-team-block">
-        <div className = "about-img-block">
-          <img src={props.state.about_img} alt = "About us"/>
-        </div>
-        <div className = "about-text-block">
-          <h2>{props.state.about_title}</h2>
-          <span>{props.state.about_text}</span>
-            <Link to = "/about-us">
-              <button>
-                Learn more
-              </button>
-            </Link>
-        </div>
+      <div className = "layout about-team-block">
+          <div className = "about-img-block">
+            <div className = "about-img" style={{backgroundImage:` url(/images/home_about_img.jpg)`}}>
+            </div>
+          </div>
+          <div className = "about-text-block">
+            <h2>{props.state.about_title}</h2>
+            <span>{props.state.about_text}</span>
+              <Link to = "/about-us">
+                <button>
+                  Learn more
+                </button>
+              </Link>
+          </div>
       </div>
     </section>
   )

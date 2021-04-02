@@ -6,6 +6,7 @@ import {
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import Blog from './components/pages/Blog';
 
 function App(props) {
   return (
@@ -14,6 +15,9 @@ function App(props) {
         <Header state={props.state.header} />
         <Route exact path="/">
           <Home state={props.state.pages.home} />
+        </Route>
+        <Route exact path="/blog">
+          <Blog state={props.state.pages.blog} />
         </Route>
         <Footer state={props.state.footer} />
       </Router>
