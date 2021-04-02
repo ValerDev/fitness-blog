@@ -3,7 +3,7 @@ import footer from "../assets/styles/footer.scss"
 import { Link } from "react-router-dom";
 
 const Footer = (props) => {
-  console.log('footer' , props);
+  console.log('footer', props);
   return (
     <footer>
       <div className="footer-block">
@@ -12,9 +12,7 @@ const Footer = (props) => {
         </div>
         <div className="footer-menu">
           {
-            props.state.footer_menu.map(
-              (menu, index) => <div><Link key={index} to={menu.link}>{menu.title}</Link></div>
-            )
+            props.state.footer_menu.map((menu, index) => <Link key={index} to={menu.link}>{menu.title}</Link>)
           }
         </div>
       </div>

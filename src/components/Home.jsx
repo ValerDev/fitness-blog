@@ -7,9 +7,9 @@ const Home = (props) => {
       <CustomSlider state={{
         images: props.state.slider_images,
         title: "Slider",
-        height: "500px",
+        height: "750px",
         size: 'cover',
-        speed: 2000,
+        speed: 3500,
       }} />
       <h1>Fitness Blog</h1>
       <h5>Day 1</h5>
