@@ -1,5 +1,6 @@
 @import './includes/variables';
-.footer-block{
+
+.footer-block {
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: center;
@@ -7,18 +8,14 @@
     background-color: $darkSecondary;
 
 }
-.footer-menu{
+
+.footer-menu {
     display: grid;
     grid-template-rows: auto;
     grid-row-gap: 15px;
     text-align: center;
-    a{
-        color: $fontColor;
-        transition: .3s;
+
+    a {
         font-size: 16px;
-        width: 100%;
-    }a:hover{
-        color:$lightColor;
-        transform: scale(1.1);
     }
 }
