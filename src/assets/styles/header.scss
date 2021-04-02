@@ -17,8 +17,8 @@
         margin: 15px 0;
         transition: .3s;
     }img:hover{
-        width: 110%;
-        padding:0 20px;
+        transform: scale(.9);
+        font-weight: bold;
     }
 }
 .primary-menu{
@@ -30,7 +30,8 @@
         color: $primaryColor;
         transition: .3s;
     }a:hover{
-        font-size: 20px;
+        transform: scale(1.1);
         color: $darkColor;
+        font-weight: bold;
     }
 }

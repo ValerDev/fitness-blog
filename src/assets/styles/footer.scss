@@ -19,6 +19,7 @@
         width: 100%;
     }a:hover{
         color:$lightColor;
-        font-size: 18px;
+        transform: scale(1.1);
+        font-weight: bold;
     }
 }
