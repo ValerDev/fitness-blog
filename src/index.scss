@@ -1,9 +1,20 @@
-*{
+@import "./assets/styles/includes/variables";
+
+* {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-a{
+
+a {
   text-decoration: none;
+  transition: .1s;
+  color: $lightColor;
+
+  &:hover {
+    color: $primaryColor;
+    transform: scale(1.1);
+    font-weight: bold;
+  }
 }
