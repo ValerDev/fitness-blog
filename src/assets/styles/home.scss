@@ -1,0 +1,51 @@
+@import "./includes/variables.scss";
+
+.about-team-block{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    .about-img-block{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        img{
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .about-text-block{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        max-width: 450px;
+        h2{
+            color:$primaryColor;
+            font-weight: 700;
+        }
+        span{
+            font-size: 16px;
+            color: $secondaryColor;
+            text-align: justify;
+            font-weight: 600;
+        }
+        button{
+            color: $fontColor;
+            background-color: $secondaryColor;
+            padding: 20px 15px;
+            border: none;
+            border-radius: 10px;
+            transition: .3s;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: $lightSecondary;
+        }
+    }
+}

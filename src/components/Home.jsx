@@ -1,5 +1,6 @@
 import React from 'react';
 import CustomSlider from './slider/Slider';
+import home from '../assets/styles/home.scss'
 
 const Home = (props) => {
   return (
@@ -13,11 +14,11 @@ const Home = (props) => {
       }} />
       <div className = "about-team-block">
         <div className = "about-img-block">
-          <img src="" alt=""/>
+          <img src={props.state.about_img} />
         </div>
         <div className = "about-text-block">
-          <h2>{props.state.home.about_title}</h2>
-          <span></span>
+          <h2>{props.state.about_title}</h2>
+          <span>{props.state.about_text}</span>
           <button>Learn more</button>
         </div>
       </div>

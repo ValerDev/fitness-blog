@@ -10,7 +10,6 @@ class CustomSlider extends React.Component {
             autoplay: true,
             autoplaySpeed: this.props.state.speed ? this.props.state.speed : 3000,
         };
-        console.log(settings)
         return (
             <div>
                 {/* {this.props.state.title ? <h3>CustomSlider</h3> : ''} */}
