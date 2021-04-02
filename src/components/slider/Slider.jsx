@@ -8,6 +8,8 @@ class CustomSlider extends React.Component {
             arrows: false,
             dots: true,
             centerMode: true,
+            autoplay: true,
+
         };
         return (
             <div>
