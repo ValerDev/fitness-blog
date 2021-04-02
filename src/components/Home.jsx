@@ -11,8 +11,16 @@ const Home = (props) => {
         size: 'cover',
         speed: 3500,
       }} />
-      <h1>Fitness Blog</h1>
-      <h5>Day 1</h5>
+      <div className = "about-team-block">
+        <div className = "about-img-block">
+          <img src="" alt=""/>
+        </div>
+        <div className = "about-text-block">
+          <h2>{props.state.home.about_title}</h2>
+          <span></span>
+          <button>Learn more</button>
+        </div>
+      </div>
     </section>
   )
 
