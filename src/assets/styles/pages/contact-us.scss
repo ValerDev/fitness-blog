@@ -20,11 +20,12 @@
         >*{
             border-radius: 8px;
             border: none;
+            box-shadow: 0px 0px 0px 0px #00695c88;
             padding: .5em;
             transition: .2s;
             &:focus{
-                box-shadow: 0px 0px 10px 2px $primaryColor;
-            }
+                box-shadow: 0px 0px 0px 3px #00695c88;
+            }   
         }
         #name-contact{
             grid-area: contactName;
@@ -36,6 +37,14 @@
             grid-area: message;
             height: 200px;
             resize: none;
+        }
+        button{
+            background-color: $secondaryColor;
+            color: $fontColor;
+            &:hover{
+                background-color: $lightSecondary;
+                cursor: pointer;
+            }
         }
     }
 }

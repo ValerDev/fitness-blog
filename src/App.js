@@ -21,7 +21,7 @@ function App(props) {
           <Blog state={props.state.pages.blog} />
         </Route>
         <Route exact path="/contact-us">
-          <ContactUs state= {props.state.pages.contactUs}/>
+          <ContactUs state= {props.state.pages.contactUs} dispatch = {props.dispatch}/>
         </Route>
         <Footer state={props.state.footer} />
       </Router>
