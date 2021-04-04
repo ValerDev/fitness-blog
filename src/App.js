@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Blog from './components/pages/Blog';
+import ContactUs from './components/pages/ContactUs';
 
 function App(props) {
   return (
@@ -18,6 +19,9 @@ function App(props) {
         </Route>
         <Route exact path="/blog">
           <Blog state={props.state.pages.blog} />
+        </Route>
+        <Route exact path="/contact-us">
+          <ContactUs state= {props.state.pages.contactUs}/>
         </Route>
         <Footer state={props.state.footer} />
       </Router>
