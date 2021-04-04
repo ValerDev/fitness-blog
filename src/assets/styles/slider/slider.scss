@@ -4,10 +4,12 @@
             .carousel-item{
                 .carousel-row{
                     >div{
-                        outline: none;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
+                        >div{
+                            outline: none;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
                     }
                     >.danger{
                         font-weight: bold;

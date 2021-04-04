@@ -9,8 +9,8 @@ const Home = (props) => {
       <CustomSlider state={{
         images: props.state.slider_images,
         title: "Slider",
-        height: "750px",
-        size: 'cover',
+        height: "1020px",
+        size: 'contain',
         speed: 3500,
       }} />
       <div className = "layout about-team-block">

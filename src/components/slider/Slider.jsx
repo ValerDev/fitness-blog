@@ -12,7 +12,6 @@ class CustomSlider extends React.Component {
         };
         return (
             <div>
-                {/* {this.props.state.title ? <h3>CustomSlider</h3> : ''} */}
                 <Slider {...settings} className='custom-slider'>
                     {
                         this.props.state.images ? this.props.state.images.map((image, index) => {
