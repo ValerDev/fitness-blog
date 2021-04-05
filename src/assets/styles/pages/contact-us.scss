@@ -1,47 +1,64 @@
 @import '../includes/variables.scss';
 
-#contact-us{
+#contact-us {
     margin: 5em auto;
-    .contact-img{
+
+    .contact-img {
         width: 900px;
         height: 700px;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         margin: 0 auto;
     }
-    .contact-block{
+
+    .contact-info {
+        display: block;
+        text-align: center;
+        margin: 1em 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .contact-block {
         display: grid;
         grid-template-areas: 'contactName mail'
-                            'message message';
-        max-width:700px;
+            'message message';
+        max-width: 700px;
         grid-gap: .5em;
         margin: 0 auto;
-        >*{
+
+        >* {
             border-radius: 8px;
             border: none;
             box-shadow: 0px 0px 0px 0px #00695c88;
             padding: .5em;
             transition: .2s;
-            &:focus{
+
+            &:focus {
                 box-shadow: 0px 0px 0px 3px #00695c88;
-            }   
+            }
         }
-        #name-contact{
+
+        #name-contact {
             grid-area: contactName;
         }
-        #mail-contact{
+
+        #mail-contact {
             grid-area: mail;
         }
-        #message-contact{
+
+        #message-contact {
             grid-area: message;
             height: 200px;
             resize: none;
         }
-        button{
+
+        button {
             background-color: $secondaryColor;
             color: $fontColor;
-            &:hover{
+
+            &:hover {
                 background-color: $lightSecondary;
                 cursor: pointer;
             }

@@ -3,7 +3,6 @@ import footer from "../assets/styles/footer.scss"
 import { Link } from "react-router-dom";
 
 const Footer = (props) => {
-  console.log('footer', props);
   return (
     <footer id = "footer">
       <div className="layout footer-block">
