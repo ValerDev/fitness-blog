@@ -30,7 +30,8 @@ const store = {
                 about_img: ["/images/home_about_img.jpg"],
                 about_title: "About us",
                 about_text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officia sed reiciendis, repellat esse explicabo nisi magni? Voluptatibus illo magni atque, rerum vel enim excepturi? Enim nobis illo saepe reprehenderit.",
-
+                journey_title:"Our journey",
+                journey_slider_images:['/images/home/bef-aft-1.jpg', '/images/home/bef-aft-2.jpg','/images/home/bef-aft-3.jpg','/images/home/bef-aft-4.jpg','/images/home/bef-aft-5.jpg']
             },
             blog: {
                 blog_info: [

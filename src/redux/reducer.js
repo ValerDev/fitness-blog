@@ -3,7 +3,6 @@ const EMAIL = 'EMAIL';
 const MESSAGE = 'MESSAGE';
 
 const contactReducers = (state, action) => { 
-    console.log(state);
     switch (action.type) {
         case NAME:
             state.contact_info.name = action.payload

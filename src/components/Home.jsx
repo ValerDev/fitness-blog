@@ -2,6 +2,7 @@ import React from 'react';
 import CustomSlider from './slider/Slider';
 import '../assets/styles/home.scss';
 import { Link } from 'react-router-dom';
+import JourneySlider from './slider/journeySlider';
 
 const Home = (props) => {
   return (
@@ -28,6 +29,19 @@ const Home = (props) => {
               </Link>
           </div>
       </div>
+      <div className = "layout journey-block">
+        <h2>{props.state.journey_title}</h2>
+      </div>
+      <JourneySlider 
+      state = {{
+        images:props.state.journey_slider_images,
+        title:'Journey Slider',
+        height: "500px",
+        width: "400px",
+        size: "contain",
+        speed:3500
+      }}
+      />
     </section>
   )
 

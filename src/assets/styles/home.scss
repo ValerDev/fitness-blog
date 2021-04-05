@@ -23,7 +23,7 @@
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 15px;
         width: 100%;
         max-width: 600px;
@@ -40,7 +40,8 @@
         button{
             color: $fontColor;
             background-color: $secondaryColor;
-            padding: 20px 15px;
+            font-weight: 600;
+            padding: 15px;
             border: none;
             border-radius: 10px;
             transition: .3s;
@@ -49,5 +50,12 @@
                 background-color: $lightSecondary;
             }
         }
+    }
+}
+.journey-block{
+    margin: 1.5em auto;
+    h2{
+        font-weight: 900;
+        color: $secondaryColor;
     }
 }
