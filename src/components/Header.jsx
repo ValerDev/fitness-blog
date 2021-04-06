@@ -1,8 +1,26 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import header from "../assets/styles/header.scss"
+import "../assets/styles/header.scss"
 
 const Header = (props) => {
+    const header_menu = [
+        {
+            title: "Home",
+            link: "/",
+        },
+        {
+            title: "Blog",
+            link: "/blog"
+        },
+        {
+            title: "About us",
+            link: "about-us"
+        },
+        {
+            title: "Contact Us",
+            link: "contact-us"
+        }
+    ]
     return (
         <header>
             <div className='layout header-block'>
@@ -13,7 +31,7 @@ const Header = (props) => {
                 </div>
                 <div className="primary-menu">
                     {
-                        props.state.header_menu.map((menu, index) => <Link key={index} to={menu.link}>{menu.title}</Link>)
+                        header_menu.map((menu, index) => <Link key={index} to={menu.link}>{menu.title}</Link>)
                     }
                 </div>
             </div>

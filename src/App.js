@@ -9,21 +9,21 @@ import Home from './components/Home';
 import Blog from './components/pages/Blog';
 import ContactUs from './components/pages/ContactUs';
 
-function App(props) {
+const App = (props) => {
   return (
     <div className="app">
       <Router>
-        <Header state={props.state.header} />
+        <Header />
         <Route exact path="/">
-          <Home state={props.state.pages.home} />
+          <Home />
         </Route>
         <Route exact path="/blog">
-          <Blog state={props.state.pages.blog} />
+          <Blog />
         </Route>
         <Route exact path="/contact-us">
-          <ContactUs state= {props.state.pages.contactUs} dispatch = {props.dispatch}/>
+          <ContactUs state={props.state.pages.contactUs} dispatch={props.dispatch} />
         </Route>
-        <Footer state={props.state.footer} />
+        <Footer />
       </Router>
     </div>
   )

@@ -2,7 +2,15 @@ const NAME = 'NAME';
 const EMAIL = 'EMAIL';
 const MESSAGE = 'MESSAGE';
 
-const contactReducers = (state, action) => { 
+let initialState = {
+    contact_info: {
+        name: '',
+        email: '',
+        message: ''
+    }
+};
+
+const contactReducers = (state = initialState, action) => {
     switch (action.type) {
         case NAME:
             state.contact_info.name = action.payload
