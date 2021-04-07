@@ -1,5 +1,5 @@
 import { createStore, combineReducers } from "redux";
-import contactReducers from "./reducer"
+import contactReducers from "./contactReducers"
 
 const reducers = combineReducers({
     pages: contactReducers,

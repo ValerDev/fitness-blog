@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Blog from './components/pages/Blog';
 import ContactUs from './components/pages/ContactUs';
+import SingleBlog from './components/pages/SingleBlog';
 
 const App = (props) => {
   return (
@@ -18,10 +19,13 @@ const App = (props) => {
           <Home />
         </Route>
         <Route exact path="/blog">
-          <Blog />
+          <Blog blog_info={props.state.pages.blog_info} />
         </Route>
         <Route exact path="/contact-us">
-          <ContactUs state={props.state.pages.contactUs} dispatch={props.dispatch} />
+          <ContactUs state={props.state.pages.contact_us} dispatch={props.dispatch} />
+        </Route>
+        <Route exact path={"/blog/:id"}>
+          <SingleBlog  blog_info={props.state.pages.blog_info}/>
         </Route>
         <Footer />
       </Router>

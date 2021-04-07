@@ -4,7 +4,7 @@ import {
     handleNameChangeActionCreator,
     handleEmailChangeActionCreator,
     handleMessageChangeActionCreator
-} from '../../redux/reducer';
+} from '../../redux/contactReducers';
 
 const ContactUs = (props) => {
 
