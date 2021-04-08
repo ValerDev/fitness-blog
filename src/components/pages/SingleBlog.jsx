@@ -12,7 +12,7 @@ const SingleBlog = (props) => {
                     <div className="image-block">
                         {
                             props.blog_info.map((elem, index) => {
-                                return elem.id === ID.id ? <div className='blog-img' key={index} style={{ backgroundImage: `url(${elem.img})`}}></div> : '';
+                                return elem.id === ID.id ? <div className='blog-img' key={index} style={{ backgroundImage: `url(${elem.singleImg})`}}></div> : '';
                             })
                         }
                     </div>
