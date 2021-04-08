@@ -8,22 +8,30 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Blog from './components/pages/Blog';
 import ContactUs from './components/pages/ContactUs';
+import SingleBlog from './components/pages/SingleBlog';
+import AboutUs from './components/pages/AboutUs';
 
-function App(props) {
+const App = (props) => {
   return (
     <div className="app">
       <Router>
-        <Header state={props.state.header} />
+        <Header />
         <Route exact path="/">
-          <Home state={props.state.pages.home} />
+          <Home />
         </Route>
         <Route exact path="/blog">
-          <Blog state={props.state.pages.blog} />
+          <Blog blog_info={props.state.pages.blog_info} />
+        </Route>
+        <Route exact path="/about-us">
+          <AboutUs />
         </Route>
         <Route exact path="/contact-us">
-          <ContactUs state= {props.state.pages.contactUs} dispatch = {props.dispatch}/>
+          <ContactUs state={props.state.pages.contact_us} dispatch={props.dispatch} />
         </Route>
-        <Footer state={props.state.footer} />
+        <Route exact path={"/blog/:id"}>
+          <SingleBlog  blog_info={props.state.pages.blog_info}/>
+        </Route>
+        <Footer />
       </Router>
     </div>
   )

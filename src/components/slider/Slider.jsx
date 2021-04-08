@@ -8,6 +8,7 @@ class CustomSlider extends React.Component {
             arrows: false,
             dots: true,
             autoplay: true,
+            slidesToShow: this.props.state.toShow ? this.props.state.toShow : 1,
             autoplaySpeed: this.props.state.speed ? this.props.state.speed : 3000,
         };
         return (
@@ -16,7 +17,7 @@ class CustomSlider extends React.Component {
                     {
                         this.props.state.images ? this.props.state.images.map((image, index) => {
                             return < div key={index} >
-                                <div key={index} className={`slider-image img_${++index}`}
+                                <div key={--index} className={`slider-image img_${++index}`}
                                     style={{
                                         backgroundImage: `url(${image})`,
                                         height: this.props.state.height ? this.props.state.height : '400px',

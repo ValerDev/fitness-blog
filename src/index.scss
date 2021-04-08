@@ -14,7 +14,7 @@ a {
   text-decoration: none;
   transition: .1s;
   color: $lightColor;
-  width: max-content;
+  // width: max-content;
   &:hover {
     color: $primaryColor;
     transform: scale(1.1);
