@@ -1,0 +1,26 @@
+@import "./assets/styles/includes/variables";
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body{
+  background-color: #e5e5e5;
+}
+a {
+  text-decoration: none;
+  transition: .1s;
+  color: $lightColor;
+  // width: max-content;
+  &:hover {
+    color: $primaryColor;
+    transform: scale(1.1);
+  }
+}
+.layout{
+  width: 80%;
+  margin: 0 auto;
+}

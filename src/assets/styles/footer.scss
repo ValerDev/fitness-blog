@@ -1,0 +1,44 @@
+@import './includes/variables';
+
+#footer{
+    background-color: $darkSecondary;
+    .footer-block {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        justify-content: center;
+        text-align: center;
+        padding: 1.5em 0;
+        .logo-block{
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            .footer-logo{
+                width: 190px;
+                height: 80px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        .contact-block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: .5em;
+            color: $lightColor;
+        }
+        .footer-menu {
+            display: grid;
+            grid-template-rows: auto;
+            grid-row-gap: 15px;
+            text-align: center;
+            justify-content: end;
+            a {
+                width: max-content;
+                font-size: 16px;
+            }
+        }
+    }
+}   
