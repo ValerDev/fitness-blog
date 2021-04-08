@@ -59,15 +59,15 @@
             button{
                 color: $fontColor;
                 background-color: $secondaryColor;
-                padding:15px;
+                padding: .8em .5em;
                 border: none;
                 font-size: 16px;
                 border-radius: 10px;
                 transition: .3s;
+                cursor: pointer;
                 &:hover{
-                    cursor: pointer;
                     background-color: $lightSecondary;
-                    transform:scale(1.1)
+                    transform:scale(1.01)
                 }
             }
         }
