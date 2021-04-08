@@ -19,7 +19,7 @@ const Blog = (props) => {
                                             <span>{`${d.getDate()}.${d.getMonth()+1}.${d.getFullYear()}`}</span>
                                         </div>
                                         <span >{info.text}</span>
-                                        <Link to = {`/blog/${info.title.split(' ').join('-').toLowerCase()}`}>
+                                        <Link exact to = {`/blog/${info.title.split(' ').join('-').toLowerCase()}`}>
                                             <button >Read more...</button>
                                         </Link>
                                     </div>

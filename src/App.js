@@ -9,6 +9,7 @@ import Home from './components/Home';
 import Blog from './components/pages/Blog';
 import ContactUs from './components/pages/ContactUs';
 import SingleBlog from './components/pages/SingleBlog';
+import AboutUs from './components/pages/AboutUs';
 
 const App = (props) => {
   return (
@@ -20,6 +21,9 @@ const App = (props) => {
         </Route>
         <Route exact path="/blog">
           <Blog blog_info={props.state.pages.blog_info} />
+        </Route>
+        <Route exact path="/about-us">
+          <AboutUs />
         </Route>
         <Route exact path="/contact-us">
           <ContactUs state={props.state.pages.contact_us} dispatch={props.dispatch} />

@@ -33,6 +33,13 @@ const Home = (props) => {
           </Link>
         </div>
       </div>
+      <div className = "layout">
+        <h2>Interesting facts</h2>
+        <span>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam suscipit corporis, molestias sapiente quidem velit doloremque atque minus hic mollitia itaque quibusdam quos quaerat, veniam labore iste voluptatum quasi facilis?
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum saepe ad aut nobis iusto laboriosam voluptate quod optio consequuntur amet officiis id ipsum hic, tenetur ab quae ullam, quam ea.
+        </span>
+      </div>
       <div className="layout journey-block">
         <h2>Our journey</h2>
       </div>

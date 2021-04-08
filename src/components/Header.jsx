@@ -14,11 +14,11 @@ const Header = (props) => {
         },
         {
             title: "About us",
-            link: "about-us"
+            link: "/about-us"
         },
         {
             title: "Contact Us",
-            link: "contact-us"
+            link: "/contact-us"
         }
     ]
     return (
