@@ -12,12 +12,13 @@ import SingleBlog from './components/pages/SingleBlog';
 import AboutUs from './components/pages/AboutUs';
 
 const App = (props) => {
+
   return (
     <div className="app">
       <Router>
         <Header />
         <Route exact path="/">
-          <Home />
+          <Home interesting_facts = {props.state.pages.blog_info} />
         </Route>
         <Route exact path="/blog">
           <Blog blog_info={props.state.pages.blog_info} />

@@ -9,6 +9,8 @@ const Home = (props) => {
 
   const journey_slider_images = ['/images/home/bef-aft-1.jpg', '/images/home/bef-aft-2.jpg', '/images/home/bef-aft-3.jpg', '/images/home/bef-aft-4.jpg', '/images/home/bef-aft-5.jpg']
   
+  var randomFact = props.interesting_facts[Math.floor(Math.random()*props.interesting_facts.length)];
+ 
   return (
     <section id='home'>
       <CustomSlider state={{
@@ -33,11 +35,11 @@ const Home = (props) => {
           </Link>
         </div>
       </div>
-      <div className = "layout">
-        <h2>Interesting facts</h2>
+      <div className = "layout interesting-fact">
+        <h1>Interesting Fact</h1>
+        <h3>{randomFact.title}</h3>
         <span>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam suscipit corporis, molestias sapiente quidem velit doloremque atque minus hic mollitia itaque quibusdam quos quaerat, veniam labore iste voluptatum quasi facilis?
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum saepe ad aut nobis iusto laboriosam voluptate quod optio consequuntur amet officiis id ipsum hic, tenetur ab quae ullam, quam ea.
+          {randomFact.text}
         </span>
       </div>
       <div className="layout journey-block">
@@ -54,6 +56,16 @@ const Home = (props) => {
           speed: 3500
         }}
       />
+      <div className="posts-section">
+        <div className="layout">
+          <div className="news-image-block">
+
+          </div>
+          <div className="news-text-block">
+
+          </div>
+        </div>
+      </div>
     </section>
   )
 
