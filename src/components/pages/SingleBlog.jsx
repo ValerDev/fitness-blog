@@ -8,22 +8,19 @@ const SingleBlog = (props) => {
     return (
         <section id="single-blog-page">
             <div className="layout">
-                <div className="single-blog-content">
-                    <div className="image-block"> 
+                <div className="single-blog-layout">
                         {
                             props.blog_info.map((elem, index) => {
-                                return elem.id === ID.id ? <div className='blog-img' key={index} style={{ backgroundImage: `url(${elem.singleImg})`}}></div> : '';
+                                return elem.id === ID.id ?
+                                    <div className="single-blog-content">
+                                        <div className="image-block">
+                                            <div className='blog-img' key={index} style={{ backgroundImage: `url(${elem.singleImg})`}}></div>
+                                        </div>
+                                        <div className="main-content-block" key={index}><h1>{elem.title}</h1><span>{elem.text}</span></div>
+                                    </div>
+                                : '';
                             })
                         }
-                    </div>
-                    {
-                        props.blog_info.map((e, i) => {
-                            return (
-                                e.id === ID.id ? <div className="main-content-block" key={i}><h1>{e.title}</h1><span>{e.text}</span></div>
-                                    : ""
-                            )
-                        })
-                    }
                     <div className="blog-lent-cont">
                         {
                             props.blog_info.map((element,ind) =>{
@@ -35,7 +32,6 @@ const SingleBlog = (props) => {
                             })
                         }
                     </div>
-
                 </div>
             </div>
         </section>

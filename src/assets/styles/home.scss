@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5em;
     .about-img-block{
         display: flex;
         justify-content: flex-start;
@@ -19,7 +20,6 @@
     .about-text-block{
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         gap: 15px;
         padding-left: 3em;
@@ -49,10 +49,28 @@
         }
     }
 }
+.interesting-fact-block{
+    margin-bottom: 5em;
+    h1{
+        margin: 1em 0;
+    }
+    .random-fact-content{
+        column-count: 2;
+        text-align: justify;
+        h3{
+            margin: .4em 0;
+        }
+
+    }
+    
+}
 .journey-block{
-    margin: 1.5em auto;
-    h2{
-        font-weight: 900;
-        color: $secondaryColor;
+    margin-bottom: 5em;
+    .layout{
+            h2{
+                font-weight: 900;
+                color: $secondaryColor;
+                margin-bottom: 1em;
+            }
     }
 }
