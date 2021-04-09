@@ -35,27 +35,31 @@ const Home = (props) => {
           </Link>
         </div>
       </div>
-      <div className = "layout interesting-fact">
+      <div className = "layout interesting-fact-block">
         <h1>Interesting Fact</h1>
-        <h3>{randomFact.title}</h3>
-        <span>
-          {randomFact.text}
-        </span>
+        <div className="random-fact-content">
+          <h3>{randomFact.title}</h3>
+          <span>
+            {randomFact.text}
+          </span>
+        </div>
       </div>
-      <div className="layout journey-block">
-        <h2>Our journey</h2>
+      <div className="journey-block">
+        <div className="layout">
+          <h2>Our journey</h2>
+        </div>
+          <CustomSlider
+            state={{
+              images: journey_slider_images,
+              title: 'Journey Slider',
+              toShow: 3,
+              height: "500px",
+              width: "400px",
+              size: "contain",
+              speed: 3500
+            }}
+          />
       </div>
-      <CustomSlider
-        state={{
-          images: journey_slider_images,
-          title: 'Journey Slider',
-          toShow: 3,
-          height: "500px",
-          width: "400px",
-          size: "contain",
-          speed: 3500
-        }}
-      />
       <div className="posts-section">
         <div className="layout">
           <div className="news-image-block">
