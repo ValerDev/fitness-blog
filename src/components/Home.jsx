@@ -19,7 +19,9 @@ const Home = (props) => {
         height: "1020px",
         size: 'contain',
         speed: 3500,
-      }} />
+        text:'lorem ipsum'
+      }}
+      />
       <div className="layout about-team-block">
         <div className="about-img-block">
           <div className="about-img" style={{ backgroundImage: ` url(/images/home_about_img.jpg)` }}>
@@ -48,7 +50,7 @@ const Home = (props) => {
         <div className="layout">
           <h2>Our journey</h2>
         </div>
-          <CustomSlider
+          {/* <CustomSlider
             state={{
               images: journey_slider_images,
               title: 'Journey Slider',
@@ -58,7 +60,7 @@ const Home = (props) => {
               size: "contain",
               speed: 3500
             }}
-          />
+          /> */}
       </div>
       <div className="posts-section">
         <div className="layout">

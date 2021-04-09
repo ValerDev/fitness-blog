@@ -22,9 +22,16 @@ class CustomSlider extends React.Component {
                                         backgroundImage: `url(${image})`,
                                         height: this.props.state.height ? this.props.state.height : '400px',
                                         backgroundSize: this.props.state.size ? this.props.state.size : 'cover'
-                                    }}></div>
+                                    }}>
+                                        <div className="container">
+                                            
+                                            <span>
+                                            <h2>Title</h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ullam, corrupti nam explicabo tempora, corporis ab rerum qui aperiam commodi at dicta officiis accusantium vero harum doloribus quas! Assumenda, quaerat.</span>
+                                            <button>Read More...</button>
+                                        </div>
+                                    </div>
                             </div>
-                        }) : <div className='danger'>⚠ You don't give images to CustomSlider component!</div>
+                        }) : <div className='danger'>⚠ You didn't give images to CustomSlider component!</div>
                     }
                 </Slider>
             </div >
