@@ -1,8 +1,10 @@
 import { createStore, combineReducers } from "redux";
 import contactReducers from "./contactReducers"
+import {blogReducer} from './blogReducer'
 
 const reducers = combineReducers({
-    pages: contactReducers,
+    contactPage: contactReducers,
+    singleBlogPage: blogReducer,
 });
 const store = createStore(reducers);
 

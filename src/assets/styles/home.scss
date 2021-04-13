@@ -34,17 +34,20 @@
             align-items: justify;
             font-weight: 600;
         }
-        button{
-            color: $fontColor;
-            background-color: $secondaryColor;
-            font-weight: 600;
-            padding: 15px;
-            border: none;
-            border-radius: 10px;
-            transition: .3s;
-            &:hover{
-                cursor: pointer;
-                background-color: $lightSecondary;
+        a{
+            width: max-content;
+            button{
+                color: $fontColor;
+                background-color: $secondaryColor;
+                font-weight: 600;
+                padding: 15px;
+                border: none;
+                border-radius: 10px;
+                transition: .3s;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $lightSecondary;
+                }
             }
         }
     }
