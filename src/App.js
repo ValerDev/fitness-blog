@@ -24,7 +24,7 @@ const App = (props) => {
           <Blog blog_info={props.state.singleBlogPage.blog_info} />
         </Route>
         <Route exact path={"/blog/:id"}>
-          <SingleBlog  blog_info={props.state.singleBlogPage.blog_info} dispatch = {props.dispatch}/>
+          <SingleBlog comment = {props.state.singleBlogPage.comment} blog_info={props.state.singleBlogPage.blog_info} dispatch = {props.dispatch}/>
         </Route>
         <Route exact path="/about-us">
           <AboutUs />

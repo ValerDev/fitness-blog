@@ -1,0 +1,31 @@
+@import '../includes/variables';
+
+.comment-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: max-content;
+    gap: 2em;
+    textarea{
+        padding: 1em;
+        width: 500px;
+        height: 200px;
+        border-radius: 8px;
+        resize: none;
+    }
+    button{
+        width: 150px;
+        color: $fontColor;
+        background-color: $secondaryColor;
+        font-weight: 600;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        transition: .3s;
+        &:hover{
+            cursor: pointer;
+            background-color: $lightSecondary;
+        }
+    }
+}

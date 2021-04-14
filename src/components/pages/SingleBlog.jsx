@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import '../../assets/styles/pages/singleBlog.scss';
-import {commentActionCreater} from '../../redux/blogReducer'
-
+import BlogComments from './BlogComments';
 
 const SingleBlog = (props) => {
     const ID = useParams()
-    const handleComment = (newComment) =>{
-        props.dispatch(commentActionCreater(newComment.target.value))
-    }
+   
+
     return (
         <section id="single-blog-page">
             <div className="layout">
@@ -36,18 +34,9 @@ const SingleBlog = (props) => {
                             })
                         }
                     </div>
+                    <BlogComments comment = {props.comment} dispatch = {props.dispatch} />
                 </div>
-                <div className="comment-section">
-                    <div className="comment-container">
-                        {/* comment here */}
-                    </div>
-                    <div className="comment-block">
-                        <textarea onChange = {handleComment}></textarea>
-                        <button>
-                            Add comment
-                        </button>
-                    </div>
-                </div>
+                
             </div>
         </section>
     )
