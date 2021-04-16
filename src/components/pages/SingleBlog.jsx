@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import '../../assets/styles/pages/singleBlog.scss';
-
+import BlogComments from './BlogComments';
 
 const SingleBlog = (props) => {
     const ID = useParams()
+   
+
     return (
         <section id="single-blog-page">
             <div className="layout">
@@ -32,7 +34,9 @@ const SingleBlog = (props) => {
                             })
                         }
                     </div>
+                    <BlogComments comment = {props.comment} dispatch = {props.dispatch} />
                 </div>
+                
             </div>
         </section>
     )

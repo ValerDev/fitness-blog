@@ -1,3 +1,5 @@
+@import "../includes/variables";
+
 .custom-slider{
     .carousel-initialized{
         .carousel-track{
@@ -9,6 +11,39 @@
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
+                            .container{
+                                display: flex;
+                                flex-direction: column;
+                                position: absolute;
+                                width: 100%;
+                                max-width: 550px;
+                                left: 10%;
+                                top: 40%;
+                                gap: 2em;
+                                span{
+                                    padding:1em;
+                                    background-color: #fff;   
+                                    border-radius: 8px;      
+                                    h2{
+                                        margin-bottom: .5em;
+                                    }                           
+                                }
+                                button{
+                                    color: $fontColor;
+                                    background-color: $secondaryColor;
+                                    font-weight: 600;
+                                    padding: 15px;
+                                    border: none;
+                                    border-radius: 10px;
+                                    width: 150px;
+                                    transition: .3s;
+                                    &:hover{
+                                        cursor: pointer;
+                                        background-color: $lightSecondary;
+                                        transform: scale(1.05);
+                                    }
+                                }
+                            }
                         }
                     }
                     >.danger{

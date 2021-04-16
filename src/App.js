@@ -18,19 +18,19 @@ const App = (props) => {
       <Router>
         <Header />
         <Route exact path="/">
-          <Home interesting_facts = {props.state.pages.blog_info} />
+          <Home interesting_facts = {props.state.singleBlogPage.blog_info} />
         </Route>
         <Route exact path="/blog">
-          <Blog blog_info={props.state.pages.blog_info} />
+          <Blog blog_info={props.state.singleBlogPage.blog_info} />
+        </Route>
+        <Route exact path={"/blog/:id"}>
+          <SingleBlog comment = {props.state.singleBlogPage.comment} blog_info={props.state.singleBlogPage.blog_info} dispatch = {props.dispatch}/>
         </Route>
         <Route exact path="/about-us">
           <AboutUs />
         </Route>
         <Route exact path="/contact-us">
-          <ContactUs state={props.state.pages.contact_us} dispatch={props.dispatch} />
-        </Route>
-        <Route exact path={"/blog/:id"}>
-          <SingleBlog  blog_info={props.state.pages.blog_info}/>
+          <ContactUs state={props.state.contactPage.contact_us} dispatch={props.dispatch} />
         </Route>
         <Footer />
       </Router>

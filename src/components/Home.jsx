@@ -17,9 +17,12 @@ const Home = (props) => {
         images: slider_images,
         title: "Slider",
         height: "1020px",
-        size: 'contain',
+        size: 'cover',
         speed: 3500,
-      }} />
+        container: true,
+        text:'lorem ipsum'
+      }}
+      />
       <div className="layout about-team-block">
         <div className="about-img-block">
           <div className="about-img" style={{ backgroundImage: ` url(/images/home_about_img.jpg)` }}>
@@ -56,6 +59,7 @@ const Home = (props) => {
               height: "500px",
               width: "400px",
               size: "contain",
+              container:false,
               speed: 3500
             }}
           />
@@ -63,7 +67,7 @@ const Home = (props) => {
       <div className="posts-section">
         <div className="layout">
           <div className="news-image-block">
-
+              
           </div>
           <div className="news-text-block">
 

@@ -10,7 +10,6 @@ const ContactUs = (props) => {
 
     const handleName = (newName) => {
         props.dispatch(handleNameChangeActionCreator(newName.target.value))
-        console.log(newName)
     }
     const handleEmail = (newEmail) => {
         props.dispatch(handleEmailChangeActionCreator(newEmail.target.value))
