@@ -1,10 +1,10 @@
 const COMMENT = 'COMMENT';
-const NEWCOMMENT = 'NEWCOMMENT';
+const ADD_COMMENT = 'ADD_COMMENT';
+const REMOVE_COMMENT = 'REMOVE_COMMENT';
 
 let initialState = {
     singleBlog: {
-        comments_info: [
-            { id: '', comm: '' }
+        comments: [
         ],
         comment: '',
     },
@@ -29,17 +29,19 @@ let initialState = {
 export const blogReducer = (state = initialState, action) => {
     switch (action.type) {
         case COMMENT:
-            state.comment = action.payload
+            state.singleBlog.comment = action.payload
             return state
-        case NEWCOMMENT:
-            let body = state.comment
-            state.comment = ''
-            state.comments_info.comm = state.comments_info.comm.push( {id: 1, comm : body})
+        case ADD_COMMENT:
+            if(action.payload.text) state.singleBlog.comments.unshift(action.payload)
+            state.singleBlog.comment = ''
+            return state
+        case REMOVE_COMMENT:
+            state.singleBlog.comments = action.payload
             return state
         default:
             return state
     }
 }
-
-export const addCommentCreator = () => ({ type: NEWCOMMENT })
+export const removeCommentActionCreator = (filteredComments) => ({type: REMOVE_COMMENT , payload: filteredComments})
+export const addCommentCreator = (newComment) => ({ type: ADD_COMMENT, payload: newComment })
 export const commentActionCreator = (newComment) => ({ type: COMMENT, payload: newComment })

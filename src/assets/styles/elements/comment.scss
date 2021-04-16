@@ -1,0 +1,50 @@
+@import "../includes/variables";
+
+
+.comment{
+    width: 100%;
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .comment-avatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 25px;
+        width: 53px;
+        height: 53px;
+        background-color: #e5e5e5;
+        box-shadow: 0px 0px 0px 2px $primaryColorTransparent; 
+        border-radius: 50%;
+        color: $secondaryColor;
+        padding: 0.2em .1em 0;
+    }
+    .comment-content{
+        background-color: #e5e5e5;
+        padding: 1em;
+        border-radius: 26px;
+        box-shadow: 0px 0px 0px 2px $primaryColorTransparent; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 70px);
+        overflow: hidden;
+        >p{
+            font-weight: 600;
+            color: $secondaryColor;   
+            overflow-wrap: anywhere;
+            
+        }
+        >span{
+            color: $secondaryColor;
+            cursor: pointer;
+            transition: .2s;
+            padding-left: 1em;
+            &:hover{
+                opacity: .6;
+            }
+        }
+    }
+}
