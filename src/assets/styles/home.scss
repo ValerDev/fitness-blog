@@ -57,6 +57,8 @@
     .random-fact-content{
         column-count: 2;
         text-align: justify;
+        display: flex;
+        flex-direction: column;
         h3{
             margin: .4em 0;
         }
