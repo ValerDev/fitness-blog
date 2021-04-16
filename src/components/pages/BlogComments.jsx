@@ -13,14 +13,14 @@ const BlogComments = (props) => {
         props.dispatch(commentActionCreator(''))
     }
     const removeComment = (id) => {
-        let filteredComments = props.state.comments.filter(comment => comment.id !== id.id)
+        let filteredComments = props.state.comments.filter(comment => comment.id !== id)
         props.dispatch(removeCommentActionCreator(filteredComments))
     }
     return (
         <div className="comment-section">
             <div className="comment-container">
                 <div className="comments">
-                    {props.state.comments.map(comment => <Comment key={comment.id} text={comment.text} id={comment} removeComment={removeComment} />)}
+                    {props.state.comments.map(comment => <Comment key={comment.id} text={comment.text} id={comment.id} removeComment={removeComment} />)}
                 </div>
             </div>
             <div className="comment-block">
