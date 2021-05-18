@@ -13,8 +13,8 @@
         align-items: center;
         font-weight: 600;
         font-size: 25px;
-        width: 53px;
-        height: 53px;
+        width: 45px;
+        height: 45px;
         background-color: #e5e5e5;
         box-shadow: 0px 0px 0px 2px $primaryColorTransparent; 
         border-radius: 50%;
@@ -23,7 +23,7 @@
     }
     .comment-content{
         background-color: #e5e5e5;
-        padding: 1em;
+        padding: 0 1em;
         border-radius: 26px;
         box-shadow: 0px 0px 0px 2px $primaryColorTransparent; 
         display: flex;
@@ -31,6 +31,7 @@
         align-items: center;
         width: calc(100% - 70px);
         overflow: hidden;
+        min-height: 45px;
         >p{
             font-weight: 600;
             color: $secondaryColor;   
